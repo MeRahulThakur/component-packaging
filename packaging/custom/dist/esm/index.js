@@ -1,0 +1,23 @@
+import e,{Fragment as r}from"react";import t from"styled-components";!function(e,r){void 0===r&&(r={});var t=r.insertAt;if(e&&"undefined"!=typeof document){var o=document.head||document.getElementsByTagName("head")[0],n=document.createElement("style");n.type="text/css","top"===t&&o.firstChild?o.insertBefore(n,o.firstChild):o.appendChild(n),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(document.createTextNode(e))}}(".btn{\n  background-color: blueviolet;\n  color: white;\n}");const o=({label:r})=>e.createElement("button",{className:"btn"},r);"function"==typeof SuppressedError&&SuppressedError;const n=t.input`
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  border: solid 2px
+    ${e=>e.disabled?"#e4e3ea":e.error?"#a9150b":e.success?"#067d68":"#353637"};
+  background-color: #fff;
+  &:focus {
+    border: solid 2px #1b116e;
+  }
+`,l=t.div`
+  font-size: 14px;
+  color: ${e=>e.disabled?"#e4e3ea":"#080808"};
+  padding-bottom: 6px;
+`,a=t.div`
+  font-size: 14px;
+  color: #a9150b8;
+  padding-top: 4px;
+`,d=t.p`
+  margin: 0px;
+  color: ${e=>e.disabled?"#e4e3ea":e.error?"#a9150b":"#080808"};
+`,s=t=>{var{id:o,disabled:s,label:c,message:i,error:p,success:b,onChange:u,placeholder:m}=t,f=function(e,r){var t={};for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&r.indexOf(o)<0&&(t[o]=e[o]);if(null!=e&&"function"==typeof Object.getOwnPropertySymbols){var n=0;for(o=Object.getOwnPropertySymbols(e);n<o.length;n++)r.indexOf(o[n])<0&&Object.prototype.propertyIsEnumerable.call(e,o[n])&&(t[o[n]]=e[o[n]])}return t}(t,["id","disabled","label","message","error","success","onChange","placeholder"]);return e.createElement(r,null,e.createElement(l,null,e.createElement(d,{disabled:s,error:p},c)),e.createElement(n,Object.assign({id:o,type:"text",onChange:u,disabled:s,error:p,success:b,placeholder:m},f)),e.createElement(a,null,e.createElement(d,{error:p},i)))};export{o as Button,s as Input};
+//# sourceMappingURL=index.js.map
